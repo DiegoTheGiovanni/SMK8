@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narasi Survey</title>
+    <style>
+        .survey-intro{
+    background:#ffffff;
+    padding:25px 30px;
+    border-radius:14px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.survey-intro h3{
+    margin-top:0;
+    color:#2196f3;
+    margin-bottom:12px;
+}
+
+.survey-intro p{
+    color:#444;
+    line-height:1.7;
+    margin-bottom:12px;
+    font-size:15px;
+}
+
+.scale-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+.scale-table th{
+    background:#2196f3;
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+
+.scale-table td{
+    padding:10px;
+    border:1px solid #ddd;
+    text-align:center;
+    font-size:14px;
+}
+
+.scale-table tr:nth-child(even){
+    background:#f9f9f9;
+}
+
+    </style>
+</head>
+<body>
+    <div class="survey-intro">
+    <h3>Petunjuk Pengisian Angket</h3>
+
+    <p>
+        Angket ini isinya <strong>30 item pernyataan</strong> tentang kondisi
+        yang sering kamu alami dalam kehidupan sehari hari.
+        baca setiap pernyataan dengan <strong>cermat dan jujur</strong>.
+        Selanjutnya, Kasih jawaban dengan cara memberi tanda cek (✓)
+        pada <strong>satu pilihan jawaban</strong> yang paling sesuai dengan
+        tingkat persetujuan kamu.
+    </p>
+
+    <p>
+        Pilihan jawaban yang tersedia memiliki makna sebagai berikut:
+    </p>
+
+    <table class="scale-table">
+        <tr>
+            <th>Kode</th>
+            <th>Keterangan</th>
+        </tr>
+        <tr>
+            <td><strong>SS</strong></td>
+            <td>Sangat Setuju</td>
+        </tr>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>Setuju</td>
+        </tr>
+        <tr>
+            <td><strong>TS</strong></td>
+            <td>Tidak Setuju</td>
+        </tr>
+        <tr>
+            <td><strong>STS</strong></td>
+            <td>Sangat Tidak Setuju</td>
+        </tr>
+    </table>
+</div>
+
+<!-- continue to the survey by clicking the button below. -->
+    <form action="survey.php?session=1" method="get">
+        <center><button type="submit" style="padding: 10px 20px; background-color: #2196f3; color: white; border: none; border-radius: 15px; cursor: pointer;">
+            Mulai Survey
+        </button></center>
+    </form> 
+</body>
+</html>
